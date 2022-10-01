@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-color:rgb(181, 221, 237); */
+    background-image: url('bg6.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h4{
+    width: 50px;
+    font-family: 'Dancing Script', cursive;
+
+}
+h2{
+    margin-left:45%;
+    margin-top: 50px;
+}
+
+#heading{
+     margin-bottom: 50px;
+     height: 100px;
+     text-align: center;
+     color: black;
+     font-size:70px;
+     font-family: 'Dancing Script', cursive;
+     position: relative;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-name: portfolio;
+     animation-timing-function: ease-in-out;
+
+}
+@keyframes portfolio {
+    from{
+     width: 400px;
+
+    }
+    to{
+       width: 2700px;
+    }
+    
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    border: indigo;
+    border-bottom: solid;
+    position: sticky;
+    top: 0;
+    z-index:100;
+    flex-direction: column;
+}
+#img2 img{
+    display: inline-block;
+    width: 300px;
+   margin-left:100px ;
+   border-radius: 300px;
+}
+/* #img1 img{
+    margin-left: 33%;
+    margin-bottom: 30px;
+    height: 200px;
+
+} */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    cursor: grabbing;
+}
+nav ul li a:hover{
+    color:azure;
+
+}
+#p2{
+    font-weight: bolder;
+    display: inline-block;
+    width: 600px;
+    margin: 0% 20%;
+    color:rgb(14, 14, 65);
+    font-family: 'Sora', sans-serif;
+    font-size: x-large;
+}
+.container1{
+    display: flex;
+    margin-top: 100px;
+    vertical-align:middle;
+
+}
+#p3{
+     width: 400px;
+    margin: 5% 10%;
+    /* display: inline-block; */
+    color:rgb(14, 14, 65);
+    font-family: 'Sora', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+}
+#img3 img{
+    /* display: inline-block; */
+     width:400px; 
+    /* margin-left:150px; */
+     border-radius: 300px;
+    
+}
+.container2{
+    display: flex;
+    vertical-align:bottom;
+     height: 500px;
+     margin-top: 10%;
+
+}
+#skills
+{
+    margin-top: 20px;
+    margin-left: 40%;
+    height: 200px;
+    justify-content: space-between;
+}
+skills i:hover{
+    nav-up: auto;
+}
+#form{
+    font-family: 'Sora', sans-serif;
+    padding-left: 100px;
+    font-weight: bold;
+    }
+
+.contactform{
+     padding: 10px 0px;
+     font-size: larger;
+    
+     } 
+.contactform input{
+    text-indent: 30%;
+} 
+#feedback{
+    width: 450px;
+}    
+
+footer{
+    margin-left: 45%;
+    height: 50px;
+    
+}
+
+
+
