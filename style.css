@@ -24,7 +24,7 @@ h2{
      text-align: center;
      color:whitesmoke;
      font-size:100px;
-     font-family: 'Rubik Distressed', cursive;;
+     font-family: 'Rubik Distressed', cursive;
      position: relative;
      animation-duration: 5s;
      animation-iteration-count:initial;
@@ -113,18 +113,7 @@ nav ul li a:hover{
      margin-left: 40%;
      height: 100px; 
     color: thistle;
-    animation:up_down 2s ease infinite;
 } 
-@keyframes up_down{
-    0%{
-        transform:translateX(50px);
-    }
-    50%{
-        transform: translateX(150px);
-    }
-    100% {
-        transform:translateX(50px);
-    }} 
 #form{
     font-family: 'Rubik', sans-serif;
     padding-left:40%;
@@ -139,10 +128,23 @@ nav ul li a:hover{
      } 
 .contactform input{
     text-indent: 20%;
+    border-color: red;
+    border-width: 3px;
+    color: black;
 } 
 #feedback{
     width: 450px;
-}    
+    border-color: red;
+    color: black;
+    border-width: 3px;
+}   
+button{
+    width: 80px;
+    border-width: 3px;
+    border-color:red;
+    background-color:lavender ;
+    color: black;
+} 
 button:hover{
     color:tomato;
 }
@@ -166,6 +168,9 @@ footer i:hover{
          margin-top:150px;
         font-size: 60px;
       }
+      h2{
+        margin-left: 40%;
+      }
       .container1{
         flex-direction: column;
      }
@@ -174,14 +179,15 @@ footer i:hover{
         }
      #p3{
             width: 80%;
+            margin-left: 20px;
      }
      #img2 img{
         width: 50%;
-        margin-left: 20px;
+        margin-left: 40px;
      }
      #img3 img{
-        width: 50%;
-        margin-left: 20px;
+        width: 70%;
+        margin-left: 40px;
      }
      .container2{
         flex-direction: column;
@@ -191,6 +197,7 @@ footer i:hover{
       }
       .contactform{
         flex-direction: column;
+        margin-right: 30px;
       }
       #feedback{
         width: 200px;
