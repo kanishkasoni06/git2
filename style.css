@@ -1,11 +1,10 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 body{
-    /* background-color:rgb(181, 221, 237); */
     background-image: url('photo-1616441065120-81e9e146d3ef.jpeg');
-    background-attachment: scroll;
+    background-attachment:scroll;
     background-repeat: no-repeat;
     background-size:100% 108%;
 }  
@@ -13,7 +12,7 @@ h4{
     width: 50px;
     font-family: 'Rubik Dirt', cursive;
     color: sienna;
-
+    font-size: 20px;
 }
 h2{
     margin-left:50%;
@@ -21,11 +20,10 @@ h2{
     color: azure;
 }
 #heading{
-     margin-bottom:50px;
-     max-height: 100px;
+     margin:75px 0px;
      text-align: center;
      color:whitesmoke;
-     font-size:70px;
+     font-size:100px;
      font-family: 'Rubik Distressed', cursive;;
      position: relative;
      animation-duration: 5s;
@@ -44,59 +42,51 @@ h2{
 }
 nav{
     display: flex;
-    width: 100;
-    margin: auto;
+    width: 100%;
+    margin:0px;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
     border-bottom: solid;
     border-color:sienna;
-    position: sticky;
-    top: 0;
-    z-index:100;
+    position:fixed;
+    top: 0%;
     background-color:blanchedalmond;
 }
 #img2 img{
     display: inline-block;
-    width: 300px;
-   margin-left:200px ;
+    width:300px;
+    margin-left:250px ;
     border-radius: 300px;
 }
-/* #img1 img{
-    margin-left: 33%;
-    margin-bottom: 30px;
-    height: 200px;
-
-} */
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 nav ul li a{
-    text-decoration: none;
+    font-size: 20px;
     color: sienna;
-    font-weight: 100;
+    font-weight:bolder;
     cursor: grabbing;
 }
 nav ul li a:hover{
     color:blue;
-
 }
 #p2{
-   
     display: inline-block;
     width: 600px;
     margin: 0% 20%;
     color:whitesmoke;
     font-family: 'Rubik', sans-serif;
     font-size:x-large;
+    justify-content:space-evenly;
 }
 .container1{
     display: flex;
+    align-items: center;
     margin-top: 100px;
     vertical-align:middle;
-
 }
 #p3{
      width: 400px;
@@ -104,38 +94,48 @@ nav ul li a:hover{
     color:whitesmoke;
     font-family: 'Rubik', sans-serif;
     font-size:x-large;
+    justify-content:space-evenly;
    
 }
 #img3 img{
-     width:350px; 
+     width:300px; 
      margin-left:300px; 
      border-radius: 300px;
-    
 }
 .container2{
     display: flex;
+    align-items: center;
     vertical-align:bottom;
-     height: 300px;
-
 }
 #skills
 {
     margin-top: 20px;
-     margin-left: 43%;
-     height: 100px;
-     color: thistle;
-}    
+     margin-left: 40%;
+     height: 100px; 
+    color: thistle;
+    animation:up_down 2s ease infinite;
+} 
+@keyframes up_down{
+    0%{
+        transform:translateX(50px);
+    }
+    50%{
+        transform: translateX(150px);
+    }
+    100% {
+        transform:translateX(50px);
+    }} 
 #form{
     font-family: 'Rubik', sans-serif;
-    padding-left: 40%;
+    padding-left:40%;
     font-weight: bold;
+    display: flex;
     }
 
 .contactform{
-     padding: 10px 0px;
+     padding: 10px 5px;
      font-size: larger;
      color: seashell;
-    
      } 
 .contactform input{
     text-indent: 20%;
@@ -146,10 +146,8 @@ nav ul li a:hover{
 button:hover{
     color:tomato;
 }
-
-
 footer{
-    margin-left: 45%;
+    margin-left:45%;
     height: 50px;
 }
 footer i{
@@ -158,6 +156,45 @@ footer i{
 footer i:hover{
     color:skyblue;
 }
-
+@media only screen and (max-width:1440px)
+ {
+      nav{
+        flex-direction: column;
+        position:fixed;
+      }  
+      #heading{
+         margin-top:150px;
+        font-size: 60px;
+      }
+      .container1{
+        flex-direction: column;
+     }
+    #p2{
+            width: 80%;
+        }
+     #p3{
+            width: 80%;
+     }
+     #img2 img{
+        width: 50%;
+        margin-left: 20px;
+     }
+     #img3 img{
+        width: 50%;
+        margin-left: 20px;
+     }
+     .container2{
+        flex-direction: column;
+     }
+     #skills{
+            display: inline-block;
+      }
+      .contactform{
+        flex-direction: column;
+      }
+      #feedback{
+        width: 200px;
+      } 
+}
 
 
